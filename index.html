@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- FontAwesome for icons -->
+  <style>
+    /* Custom styles */
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+<!-- Navbar -->
+<nav class="bg-gray-200 p-4 fixed w-full top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+    <a href="index.html" class="text-black text-2xl font-bold">MyPortfolio</a>
+    <div class="space-x-6 hidden md:flex">
+      <a href="#about" class="text-black hover:text-yellow-300 transition duration-300">About</a>
+      <a href="#projects" class="text-black hover:text-yellow-300 transition duration-300">Projects</a>
+      <a href="#contact" class="text-black hover:text-yellow-300 transition duration-300">Contact</a>
+    </div>
+    <button id="menu-toggle" class="md:hidden text-white">
+      <i class="fas fa-bars flex flex-col mt-8">
+        <p class="lines w-[30px] h-[2px] bg-black -m-1"></p>
+        <p class="lines w-[30px] h-[2px] bg-black -m-1"></p>
+        <p class="lines w-[30px] h-[2px] bg-black -m-1"></p>
+      </i>
+    </button>
+  </div>
+</nav>
+
+
+
+<!-- Hero Section -->
+<section class=" mt-10 bg-center h-screen lg:flex items-center justify-center relative bg-cover bg-no-repeat bg-blend-screen hidden">
+  <div class="h-[80%] w-[100%] absolute bg-cover bg-no-repeat bg-blend-screen flex justify-center items-center bg-center" style="background-image: url('Black\ Simple\ Daily\ Inspirational\ Quote\ LinkedIn\ Banner\ \(2\).png')">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="text-center text-white z-10">
+    <h1 class="text-4xl md:text-6xl font-bold">Welcome to My Portfolio</h1>
+    <p class="mt-4 text-xl">I'm a Full Stack Learner</p>
+    <a href="#about" class="mt-6 inline-block bg-yellow-500 text-black py-2 px-4 rounded-lg text-xl hover:bg-yellow-400 transition">Learn More</a>
+  </div>
+  </div>
+</section>
+<section class=" mt-10 bg-center h-[500px] flex  relative bg-cover bg-blend-screen lg:hidden">
+ <!-- Mobile Menu -->
+<div id="menu" class="bg-slate-200 h-[160px] top-[30px] right-1 fixed items-start text-black space-y-4 py-4 px-6 md:hidden hidden z-40">
+  <div class="container flex flex-col relative  justify-center ">
+   <a href="#about" class="block m-3  text-black hover:text-yellow-300 transition duration-300">About</a>
+   <a href="#projects" class="block m-3 text-black hover:text-yellow-300 transition duration-300">Projects</a>
+   <a href="#contact" class="block m-3 text-black hover:text-yellow-300 transition duration-300">Contact</a>
+ </div>
+ </div>
+  <div class="h-[100%] w-[100%] -z-40 absolute bg-blend-screen  flex justify-center items-center bg-black">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="text-center text-white z-10">
+    <h1 class="text-4xl md:text-6xl font-bold">Welcome to My Portfolio</h1>
+    <p class="mt-4 text-xl">I'm a Full Stack Learner</p>
+    <a href="#about" class="mt-6 inline-block bg-yellow-500 text-black py-2 px-4 rounded-lg text-xl hover:bg-yellow-400 transition">Learn More</a>
+  </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-20 px-6 bg-white text-center">
+  <h2 class="text-3xl font-bold mb-6">About Me</h2>
+  <p class="max-w-2xl mx-auto text-gray-700 text-lg">
+    I am a dedicated and motivated second-year BTech student with a keen interest in the technical domain. Currently, I am focused on developing expertise in full-stack development. I have built a solid foundation in HTML, CSS, and JavaScript and am actively expanding my skill set in other areas of software development. In parallel, I am honing my problem-solving abilities through C++ and Data Structures & Algorithms (DSA). I am consistently seeking opportunities to further enhance my technical skills and knowledge.Looking for each and every opportunities to enhance my skills and knowledge.
+  </p>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="bg-gray-200 py-20 px-6 text-center">
+  <h2 class="text-3xl font-bold mb-6">My Projects</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+    <div class="bg-white shadow-lg rounded-lg p-6">
+      <img src="keyloggerimg.jpeg" alt="Project 1" class="rounded-lg mb-4 h-[350px] w-[350px] ">
+      <h3 class="text-xl font-semibold mb-2">KeyLogger</h3>
+      <p class="text-gray-700 mb-4">A responsive frontend application with HTML,CSS, JavaScript.</p>
+      <a href="https://pandeyanjali491.github.io/Key_Logger/" class="text-blue-500 hover:underline">View Project</a>
+    </div>
+    <div class="bg-white shadow-lg rounded-lg p-6">
+      <img src="microsoftImg.jpg" alt="Project 2" class="rounded-lg mb-4 h-[350px] w-[350px]">
+      <h3 class="text-xl font-semibold mb-2">Microsoft Clone</h3>
+      <p class="text-gray-700 mb-4">A responsive frontend application with HTML,Tailwind CSS.</p>
+      <a href="https://pandeyanjali491.github.io/Microsoft_Clone/" class="text-blue-500 hover:underline">View Project</a>
+    </div>
+    <div class="bg-white shadow-lg rounded-lg p-6">
+      <img src="Screenshot 2024-11-29 165802.png" alt="Project 3" class="rounded-lg mb-4 h-[350px] w-[350px]">
+      <h3 class="text-xl font-semibold mb-2">TourGuide</h3>
+      <p class="text-gray-700 mb-4">A non responsive static website build with HTML ,CSS only.</p>
+      <a href="https://pandeyanjali491.github.io/TourGuide/#" class="text-blue-500 hover:underline">View Project</a>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 px-6 bg-white text-center">
+  <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
+  <p class="max-w-xl mx-auto text-gray-700 text-lg mb-6">
+    I’m always looking for opportunities to learn and grow—let's connect and create something great together!  </p>
+  <a href="mailto:anjalipandey52005@gmail.com" class="inline-block bg-yellow-500 text-black py-2 px-6 rounded-lg text-xl hover:bg-yellow-400 transition">Email Me</a>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[#232f3e] py-6 text-white text-center">
+  <p>&copy; 2024 MyPortfolio | All Rights Reserved</p>
+</footer>
+
+<!-- JavaScript -->
+<script>
+  // Mobile Menu Toggle
+  const menuToggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("menu");
+
+  menuToggle.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+</script>
+
+</body>
+</html>
